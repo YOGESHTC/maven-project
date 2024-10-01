@@ -3,7 +3,7 @@ node {
         git branch: 'main', url: 'https://github.com/YOGESHTC/maven-project.git'
     }
     stage ('build') {
-        sh 'mvn install'
+        shell 'mvn install'
     }
     stage ('test') {
         echo "this is code test stage"
